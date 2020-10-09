@@ -4,7 +4,7 @@ const section = styled.section`
   width: 100%;
   max-width: 143.9rem;
   margin: 0 auto;
-  padding: 0.8rem;
+  padding: 1rem;
 `;
 
 export const Hero = styled.section`
@@ -319,3 +319,33 @@ export const Testimonials = styled(section)`
     color: #FFF;
   }
 `;
+
+export const Pricing = styled(section)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 11rem 0 10rem 0;
+
+  h2 {
+    font-size: 4.6rem;
+    font-weight: 400;
+  }
+
+  h4 {
+    max-width: 29.8rem;
+    margin: 2.7rem 0 9rem 0;
+  }
+
+  .prices-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33.5rem);
+    grid-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+`;
+

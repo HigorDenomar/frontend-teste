@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '../../components/Header';
 import Feature from '../../components/Feature';
 import Partner from '../../components/Partner';
+import PriceItem from '../../components/PriceItem';
+import Contact from '../../components/Contact';
 
 import heroImg from '../../assets/images/hero.svg';
 import productsIcon from '../../assets/images/products-icon.svg';
@@ -23,6 +25,7 @@ import {
   Subscribe,
   Partners,
   Testimonials,
+  Pricing
 } from './styles';
 
 export default function Landing() {
@@ -154,6 +157,33 @@ export default function Landing() {
 
         <button>More Testimonials</button>
       </Testimonials>
+    
+      <Pricing>
+        <h2>Pricing</h2>
+
+        <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
+
+        <div className="prices-container">
+          <PriceItem
+            title="Free"
+            description="Organize across all apps by hand"
+            price="0"
+          />
+          <PriceItem
+            title="STANDARD"
+            description="Organize across all apps by hand"
+            price="10"
+          />
+          <PriceItem
+            main
+            title="BUSINESS"
+            description="Organize across all apps by hand"
+            price="99"
+          />
+        </div>
+      </Pricing>
+    
+      <Contact />
     </>
   );
 }
