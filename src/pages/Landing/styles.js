@@ -349,3 +349,63 @@ export const Pricing = styled(section)`
   }
 `;
 
+export const ContactSection = styled.section`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 9.5rem 1rem 8.5rem 1rem;
+  background: #D6EBFF;
+  box-shadow: 0 0.849823rem 1.24205rem rgba(0, 0, 0, 0.07);
+  color: #252B42;
+
+  h2 {
+    font-size: 4.6rem;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    max-width: 29.8rem;
+    text-align: center;
+    margin: 2.7rem 0 6rem 0;
+  }
+
+  .content {
+    display: flex;
+  }
+`;
+
+export const Footer = styled(section)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 13rem 0;
+
+  .pages {
+
+    h3 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+    }
+
+    ul {
+      list-style: none;
+
+      li+li {
+        margin-top: 1.6rem;
+      }
+
+      li {
+        a {
+          text-decoration: none;
+          color: #FFF;
+
+        }
+      }
+    }
+  }
+`;
+
