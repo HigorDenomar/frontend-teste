@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+const section = styled.section`
   width: 100%;
   max-width: 143.9rem;
   margin: 0 auto;
-  background: red;
+  padding: 0.8rem;
 `;
 
 export const Hero = styled.section`
@@ -71,4 +71,44 @@ export const Hero = styled.section`
     }
   }
 
+`;
+
+export const Features = styled(section)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 57.1rem;
+  padding-top: 30rem;
+
+  h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 4.6rem;
+    font-weight: 400;
+    margin: 1.7rem 0 2.7rem 0;
+  }
+
+  h4 {
+    font-weight: bold;
+    line-height: 2rem;
+    max-width: 29.8rem;
+    text-align: center;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25.5rem);
+    grid-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 9rem 0;
+  }
+  
 `;

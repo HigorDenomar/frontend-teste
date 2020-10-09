@@ -1,11 +1,15 @@
 import React from 'react';
 import Header from '../../components/Header';
+import Feature from '../../components/Feature';
 
 import heroImg from '../../assets/images/hero.svg';
+import productsIcon from '../../assets/images/products-icon.svg';
+import organizeIcon from '../../assets/images/fastest-organize-icon.svg';
+import workIcon from '../../assets/images/work-better-icon.svg';
 
 import {
-  Container,
-  Hero
+  Hero,
+  Features
 } from './styles';
 
 export default function Landing() {
@@ -35,9 +39,33 @@ export default function Landing() {
         </div>
       </Hero>
 
-      <Container>
+      <Features>
+        <h3>At your fingertips</h3>
+        <h2>Features</h2>
 
-      </Container>
+        <h4>
+          Most calendars are designed for teams.
+          Slate is designed for freelancers
+        </h4>
+
+        <div className="content">
+          <Feature
+            icon={productsIcon}
+            title="The best products start with Sketch"
+            description="Slate helps you see how many more days you need to work to reach your financial goal."
+          />
+          <Feature
+            icon={organizeIcon}
+            title="Fastest way to organize"
+            description="Slate helps you see how many more days you need to work to reach your financial goal."
+          />
+          <Feature
+            icon={workIcon}
+            title="Work better together"
+            description="Slate helps you see how many more days you need to work to reach your financial goal."
+          />
+        </div>
+      </Features>
     </>
   );
 }
