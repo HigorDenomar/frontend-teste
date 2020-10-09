@@ -1,18 +1,28 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Feature from '../../components/Feature';
+import Partner from '../../components/Partner';
 
 import heroImg from '../../assets/images/hero.svg';
 import productsIcon from '../../assets/images/products-icon.svg';
 import organizeIcon from '../../assets/images/fastest-organize-icon.svg';
 import workIcon from '../../assets/images/work-better-icon.svg';
 import macbookIcon from '../../assets/images/macbook.svg';
+import airbnbIcon from '../../assets/images/logo-airbnb.svg';
+import androidIcon from '../../assets/images/logo-android.svg';
+import apiaryIcon from '../../assets/images/logo-apiary.svg';
+import appleIcon from '../../assets/images/logo-apple.svg';
+import basecampIcon from '../../assets/images/logo-basecamp.svg';
+import dropboxIcon from '../../assets/images/dropbox-icon.svg';
+import avatarImg from '../../assets/images/avatar.svg';
 
 import {
   Hero,
   Features,
   TryFree,
-  Subscribe
+  Subscribe,
+  Partners,
+  Testimonials,
 } from './styles';
 
 export default function Landing() {
@@ -35,9 +45,9 @@ export default function Landing() {
           </div>
         </div>
 
-        <div class="wave">
+        <div className="wave">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
           </svg>
         </div>
       </Hero>
@@ -80,7 +90,7 @@ export default function Landing() {
       </TryFree>
     
       <Subscribe>
-        <h3>Subscribe</h3>
+        <h3>At your fingertips</h3>
         <h2>Lightning fast prototyping</h2>
 
         <h3>Subscribe to our Newsletter</h3>
@@ -89,6 +99,61 @@ export default function Landing() {
         <input type="email" placeholder="Your Email" />
         <button>Subscribe</button>
       </Subscribe>
+    
+      <Partners>
+        <h2>Partners</h2>
+        <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
+
+        <div className="content">
+          <Partner
+            client="Client Name"
+            description="Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+            logo={apiaryIcon}
+          />
+          <Partner
+            client="Client Name"
+            description="Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+            logo={androidIcon}
+          />
+          <Partner
+            client="Client Name"
+            description="Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+            logo={basecampIcon}
+          />
+          <Partner
+            client="Client Name"
+            description="Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+            logo={basecampIcon}
+          />
+          <Partner
+            client="Client Name"
+            description="Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+            logo={airbnbIcon}
+          />
+          <Partner
+            client="Client Name"
+            description="Slate helps you see how many more days you need to work to reach your financial goal for the month and year."
+            logo={appleIcon}
+          />
+        </div>
+
+        <button>Try For Free</button>
+      </Partners>
+    
+      <Testimonials>
+        <h2>Testimonials</h2>
+        <img src={dropboxIcon} alt="Dropbox" />
+
+        <h4>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</h4>
+
+        <div className="people-container">
+          <img src={avatarImg} alt="" />
+          <h5>Organize across</h5>
+          <a href="#">Ui designer</a>
+        </div>
+
+        <button>More Testimonials</button>
+      </Testimonials>
     </>
   );
 }
