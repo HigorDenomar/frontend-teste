@@ -11,7 +11,8 @@ import macbookIcon from '../../assets/images/macbook.svg';
 import {
   Hero,
   Features,
-  TryFree
+  TryFree,
+  Subscribe
 } from './styles';
 
 export default function Landing() {
@@ -77,6 +78,17 @@ export default function Landing() {
 
         <img src={macbookIcon} alt="Macbook" />
       </TryFree>
+    
+      <Subscribe>
+        <h3>Subscribe</h3>
+        <h2>Lightning fast prototyping</h2>
+
+        <h3>Subscribe to our Newsletter</h3>
+        <p>Available exclusivery on Figmaland</p>
+
+        <input type="email" placeholder="Your Email" />
+        <button>Subscribe</button>
+      </Subscribe>
     </>
   );
 }

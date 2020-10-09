@@ -159,3 +159,50 @@ export const TryFree = styled(section)`
   }
 `;
 
+export const Subscribe = styled(section)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8.1rem 0.8rem 10.4rem 0.8rem;
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 4.6rem;
+    font-weight: 400;
+
+    margin: 0.7rem 0 6.9rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin: 1rem 0 3.4rem 0;
+  }
+
+  input, button {
+    width: 35.3rem;
+    height: 5.4rem;
+
+    border: 0;
+    outline: none;
+    border-radius: 5rem;
+  }
+
+  input {
+    background: #F4F4F4;
+
+    padding: 0 3.5rem;
+    margin-bottom: 1.2rem;
+
+    color: #18171D;
+    font-size: 1.4rem;
+  }
+
+  button {
+    background: #EF2779;
+    color: #FFF;
+  }
+`;
+
