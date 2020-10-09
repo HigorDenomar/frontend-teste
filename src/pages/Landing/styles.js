@@ -112,3 +112,50 @@ export const Features = styled(section)`
   }
   
 `;
+
+export const TryFree = styled(section)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2, h4 {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 4.6rem;
+    line-height: 5.7rem;
+    font-weight: 400;
+    max-width: 29.6rem;
+    margin-top: 10.1rem;
+  }
+
+  h4 {
+    line-height: 2rem;
+    max-width: 29.8rem;
+    margin: 2.7rem 0 9rem 0;
+  }
+
+  button {
+    width: 23.6rem;
+    height: 6.5rem;
+    border-radius: 5rem;
+
+    background: #38A3F1;
+
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #FFF;
+  }
+
+  img {
+    width: 100%;
+    max-width: 103.3rem;
+    margin: 12.9rem 0 13.3rem 0;
+  }
+`;
+

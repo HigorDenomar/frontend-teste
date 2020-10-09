@@ -6,10 +6,12 @@ import heroImg from '../../assets/images/hero.svg';
 import productsIcon from '../../assets/images/products-icon.svg';
 import organizeIcon from '../../assets/images/fastest-organize-icon.svg';
 import workIcon from '../../assets/images/work-better-icon.svg';
+import macbookIcon from '../../assets/images/macbook.svg';
 
 import {
   Hero,
-  Features
+  Features,
+  TryFree
 } from './styles';
 
 export default function Landing() {
@@ -66,6 +68,15 @@ export default function Landing() {
           />
         </div>
       </Features>
+    
+      <TryFree>
+        <h2>Lightning fast prototyping</h2>
+        <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
+
+        <button>Try For Free</button>
+
+        <img src={macbookIcon} alt="Macbook" />
+      </TryFree>
     </>
   );
 }
