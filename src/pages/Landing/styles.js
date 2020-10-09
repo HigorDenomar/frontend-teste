@@ -374,6 +374,8 @@ export const ContactSection = styled.section`
 
   .content {
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
 `;
 
