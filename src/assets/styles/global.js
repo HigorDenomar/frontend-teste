@@ -18,4 +18,28 @@ export default createGlobalStyle`
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
   }
+
+  @media (min-width: 1280px) {
+    :root {
+      font-size: 70%;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    :root {
+      font-size: 80%;
+    }
+  }
+
+  @media (max-width: 880px) {
+    :root {
+      font-size: 58%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    :root {
+      font-size: 50%;
+    }
+  }
 `;
