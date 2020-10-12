@@ -112,10 +112,20 @@ export const Container = styled.div`
 
         li {
           font-size: 2.8rem;
+
+          a:hover::after {
+            top: auto;
+            bottom: 0;
+            left: 0;
+
+            height: 0.2rem;
+
+            animation: fade-in-toggle 0.3s forwards;
+          }
         }
       }
 
-      #subscribe {
+      form {
         display: none;
       }
     }
@@ -140,34 +150,31 @@ export const Nav = styled.nav`
     display: flex;
     list-style: none;
     
-    li{
+    li a {
+      position: relative;
+      padding: 0.5rem 1.5rem 0.5rem 2.0rem;
+      
+      text-decoration: none;
+      color: #FFF;
 
-      a {
-        position: relative;
-        padding: 0.5rem 1.5rem 0.5rem 2.0rem;
+      :hover::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
         
-        text-decoration: none;
-        color: #FFF;
+        background: currentColor;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 5rem;
 
-        :hover::after {
-          content: "";
-          position: absolute;
-          right: 0;
-          top: 0;
-          
-          background: currentColor;
-          width: 0.8rem;
-          height: 0.8rem;
-          border-radius: 5rem;
-
-          transition: 0.5s;
-          animation: fade 0.3s;
-        }
+        transition: 0.5s;
+        animation: fade 0.3s;
       }
     }
   }
 
-  #subscribe {
+  form {
     display: flex;
     margin-left: 3rem;
 
@@ -214,6 +221,16 @@ export const Nav = styled.nav`
     }
   }
 
+  @keyframes fade-in-toggle { // animação no hover dos itens da nav no menu toggle
+    from {
+      width: 0;
+      opacity: 0;
+    } to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
   // responsividade
   @media(max-width: 1010px) {
     ul li a {
@@ -229,7 +246,7 @@ export const Nav = styled.nav`
 
   @media(max-width: 920px) {
 
-    #subscribe {
+    form {
       margin-left: 1rem !important;
 
       button,

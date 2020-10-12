@@ -42,4 +42,10 @@ export default createGlobalStyle`
       font-size: 50%;
     }
   }
+
+  button:hover {
+    filter: brightness(95%);
+    box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
 `;

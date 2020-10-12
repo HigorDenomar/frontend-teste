@@ -1,29 +1,61 @@
-# Desafio hugedev's - Vaga Frontend Developer
-Implementar o design compartilhado pelo link abaixo, utilizando HTML, JS e CSS. 
-Sinta-se a vontade para utilizar frameworks front-end (tailwind, Bootstrap, foundation, etc..) para acelerar seu desenvolvimento.
+# Desafio hugedev's
+> Implementado o design compartilhado no [Figma](https://www.figma.com/file/Pdd6VRN08X6kCyZlIeuWEG/Teste-Developers)
 
-https://www.figma.com/file/Pdd6VRN08X6kCyZlIeuWEG/Teste-Developers
+<br />
 
-## Requisitos
-- Ter conhecimento de Git
-- Conhecimento de HTML, CSS e JS
-- Fazer um fork deste repositório para sua conta do Github
+<div align="center">
+  <a href="https://www.linkedin.com/in/higordenomar/">
+    <img alt="Higor Denomar" src="https://img.shields.io/badge/-HigorDenomar-8257E5?style=flat&logo=Linkedin&logoColor=white" />
+  </a>
+  
+  <a href="https://twitter.com/higordenomar">
+    <img src="https://img.shields.io/badge/-%40higordenomar-8257E5?style=flat&logo=Twitter&logoColor=white" />
+  </a>
 
-## O que vamos avaliar
-- Capacidade de apredizado
-- Capacidade de criar interfaces com alta fidelidade a partir de layouts/protótipos.
-- Semântica do seu código HTML
-- Estruturação do seu CSS de maneira reaproveitável e utilização de especificações mais recentes (flexbox, grid layout)
-- Boa lógica de programação e utilização de boas práticas no seu código javascript.
+  <a href="mailto:higordenomar@hotmail.com">
+    <img alt="Higor Denomar" src="https://img.shields.io/badge/-higordenomar%40gmail.com-8257E5?style=flat&logo=Gmail&logoColor=white" />
+  </a>
+  <br><br>
+</div>
 
-## Bonus Points:
-- Utilização de features da especificação ES6
-- Automação com Npm scripts
-- Aplicação de Rich Snippet e dados estruturados
-- Utilizar CMS como wordpress e construir um tema
-- Utilizar docker
+A Landing page foi construída utilizando [React.js](https://pt-br.reactjs.org/) e estilizada com [Styled Components](https://styled-components.com/docs/basics).
 
-## Submissão
-Após finalizar a implementação enviar o link do repositório pelo formulário https://docs.google.com/forms/d/1luKLc4sESgCt53X2QL5CQ5jsUuu5k84LcptVOHG3iGQ/viewform 
+</br><br/>
 
-# Boa sorte ;)
+## 📷 Screenshots
+
+![Print no desktop](./.github/desktop.jpg)
+
+<br />
+
+![Print no desktop](./.github/mobile.jpg)
+
+<br/><br/>
+
+## 💻 Instalação
+
+
+```sh
+# Clone este repositório (requer o git instalado):
+
+> git clone https://github.com/HigorDenomar/frontend-teste.git
+
+
+# Vá para o diretório do projeto:
+
+> cd frontend-teste
+
+
+# Instale as dependência (requer o node.js instalado):
+
+> npm install
+
+
+# inicie o projeto:
+
+> npm start
+```
+O site irá abrir em http://localhost:3000
+
+</br></br>
+<i>Code By [Higor Denomar](https://github.com/HigorDenomar)</i>

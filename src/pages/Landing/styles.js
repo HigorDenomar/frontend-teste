@@ -5,6 +5,10 @@ const section = styled.section`
   max-width: 143.9rem;
   margin: 0 auto;
   padding: 2rem;
+  
+  button:hover {
+    transform: translateY(-0.2rem);
+  }
 `;
 
 export const Hero = styled.section`
@@ -48,6 +52,11 @@ export const Hero = styled.section`
         font-size: 2.2rem;
         color: #38A3F1;
         cursor: pointer;
+        transition: 0.3s;
+
+        :hover {
+          transform: translateY(-0.2rem);
+        }
       }
     }
   }
@@ -236,29 +245,36 @@ export const Subscribe = styled(section)`
     margin: 1rem 0 3.4rem 0;
   }
 
-  input, button {
-    width: 35.3rem;
-    height: 5.4rem;
+  form {
+    display: flex;
+    flex-direction: column;
 
-    border: 0;
-    outline: none;
-    border-radius: 5rem;
-  }
+    input, button {
+      width: 35.3rem;
+      height: 5.4rem;
 
-  input {
-    background: #F4F4F4;
+      border: 0;
+      outline: none;
+      border-radius: 5rem;
+    }
 
-    padding: 0 3.5rem;
-    margin-bottom: 1.2rem;
+    input {
+      background: #F4F4F4;
 
-    color: #18171D;
-    font-size: 1.4rem;
-  }
+      padding: 0 3.5rem;
+      margin-bottom: 1.2rem;
 
-  button {
-    background: #EF2779;
-    color: #FFF;
-    cursor: pointer;
+      color: #18171D;
+      font-size: 1.4rem;
+    }
+
+    button {
+      background: #EF2779;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #FFF;
+      cursor: pointer;
+    }
   }
 `;
 
