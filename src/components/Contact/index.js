@@ -15,22 +15,30 @@ export default function Contact({ dark }) {
   return (
     <Container dark={dark}>
       <div className="contact-item">
-        <img src={locationIcon} alt="" />
+        <img src={locationIcon} alt="Address" />
         <h5>6386 Spring St undefined Anchorage, Georgia 12473 United States</h5>
       </div>
       <div className="contact-item">
-        <img src={phoneIcon} alt="" />
+        <img src={phoneIcon} alt="Phone" />
         <h5>(843) 555-0130</h5>
       </div>
       <div className="contact-item">
-        <img src={mailIcon} alt="" />
+        <img src={mailIcon} alt="Email" />
         <h5>willie.jennings@example.com</h5>
       </div>
 
       <div className="networks">
-        <img src={twitterIcon} alt="" />
-        <img src={facebookIcon} alt="" />
-        <img src={linkedinIcon} alt="" />
+        <a target="_blank" href="#">
+          <img src={twitterIcon} alt="Twitter" />
+        </a>
+
+        <a target="_blank" href="#">
+          <img src={facebookIcon} alt="Facebook" />
+        </a>
+
+        <a target="_blank" href="#">
+          <img src={linkedinIcon} alt="LinkedIn" />
+        </a>
       </div>
     </Container>
   );
