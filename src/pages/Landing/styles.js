@@ -116,8 +116,7 @@ export const Hero = styled.section`
         button {
           position: absolute;
           bottom: -6.577rem;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          left: calc(50% - 11.8rem);
         }
       }
     }
