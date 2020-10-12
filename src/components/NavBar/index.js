@@ -7,7 +7,7 @@ import {
 
 export default function NavBar() {
   const [email, setEmail] = useState('');
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleToggleMenu() {
     setIsOpen(!isOpen);
