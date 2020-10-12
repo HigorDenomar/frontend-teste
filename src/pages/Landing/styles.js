@@ -482,10 +482,17 @@ export const Footer = styled(section)`
       }
 
       li {
+        transition: 0.3s;
+
         a {
           text-decoration: none;
           color: #FFF;
 
+        }
+
+        :hover {
+          filter: brightness(70%);
+          transform: translateY(-0.15rem) scale(1.02);
         }
       }
     }
