@@ -236,29 +236,34 @@ export const Subscribe = styled(section)`
     margin: 1rem 0 3.4rem 0;
   }
 
-  input, button {
-    width: 35.3rem;
-    height: 5.4rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    
+    input, button {
+      width: 35.3rem;
+      height: 5.4rem;
 
-    border: 0;
-    outline: none;
-    border-radius: 5rem;
-  }
+      border: 0;
+      outline: none;
+      border-radius: 5rem;
+    }
 
-  input {
-    background: #F4F4F4;
+    input {
+      background: #F4F4F4;
 
-    padding: 0 3.5rem;
-    margin-bottom: 1.2rem;
+      padding: 0 3.5rem;
+      margin-bottom: 1.2rem;
 
-    color: #18171D;
-    font-size: 1.4rem;
-  }
+      color: #18171D;
+      font-size: 1.4rem;
+    }
 
-  button {
-    background: #EF2779;
-    color: #FFF;
-    cursor: pointer;
+    button {
+      background: #EF2779;
+      color: #FFF;
+      cursor: pointer;
+    }
   }
 `;
 

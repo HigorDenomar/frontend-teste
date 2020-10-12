@@ -6,10 +6,19 @@ import {
 } from './styles';
 
 export default function NavBar() {
+  const [email, setEmail] = useState('');
   const [isOpen, setIsOpen] = useState(false);
 
   function handleToggleMenu() {
     setIsOpen(!isOpen);
+  }
+
+  function handleSubmitForm(event) {
+    event.preventDefault();
+    
+    alert("Sorry, this is not a functional form,\nsite still under construction...");
+
+    setEmail('');
   }
 
   return (
@@ -32,14 +41,16 @@ export default function NavBar() {
           <li><a href="#">Contact</a></li>
         </ul>
 
-        <div id="subscribe">
+        <form onSubmit={event => handleSubmitForm(event)}>
           <input
             type="email"
             placeholder="Your Email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
           />
 
           <button>Subscribe</button>
-        </div>
+        </form>
       </Nav>
     </Container>
   );

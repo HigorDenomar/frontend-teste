@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import Header from '../../components/Header';
 import Feature from '../../components/Feature';
 import Partner from '../../components/Partner';
@@ -6,7 +7,6 @@ import PriceItem from '../../components/PriceItem';
 import Form from '../../components/Form';
 import Contact from '../../components/Contact';
 import Map from '../../components/Map';
-
 import heroImg from '../../assets/images/hero.svg';
 import productsIcon from '../../assets/images/products-icon.svg';
 import organizeIcon from '../../assets/images/fastest-organize-icon.svg';
@@ -33,6 +33,16 @@ import {
 } from './styles';
 
 export default function Landing() {
+  const [email, setEmail] = useState('');
+
+  function handleSubmitForm(event) {
+    event.preventDefault();
+    
+    alert("Sorry, this is not a functional form,\nsite still under construction...");
+
+    setEmail('');
+  }
+
   return (
     <>
       <Header />
@@ -102,9 +112,16 @@ export default function Landing() {
 
         <h3>Subscribe to our Newsletter</h3>
         <p>Available exclusivery on Figmaland</p>
+        <form onSubmit={event => handleSubmitForm(event)}>
+          <input
+            type="email"
+            placeholder="Your Email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
 
-        <input type="email" placeholder="Your Email" />
-        <button>Subscribe</button>
+          <button>Subscribe</button>
+        </form>
       </Subscribe>
     
       <Partners>

@@ -115,7 +115,7 @@ export const Container = styled.div`
         }
       }
 
-      #subscribe {
+      form {
         display: none;
       }
     }
@@ -167,7 +167,7 @@ export const Nav = styled.nav`
     }
   }
 
-  #subscribe {
+  form {
     display: flex;
     margin-left: 3rem;
 
@@ -229,7 +229,7 @@ export const Nav = styled.nav`
 
   @media(max-width: 920px) {
 
-    #subscribe {
+    form {
       margin-left: 1rem !important;
 
       button,
