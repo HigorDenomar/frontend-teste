@@ -116,8 +116,7 @@ export const Hero = styled.section`
         button {
           position: absolute;
           bottom: -6.577rem;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          left: calc(50% - 11.8rem);
         }
       }
     }
@@ -482,10 +481,17 @@ export const Footer = styled(section)`
       }
 
       li {
+        transition: 0.3s;
+
         a {
           text-decoration: none;
           color: #FFF;
 
+        }
+
+        :hover {
+          filter: brightness(70%);
+          transform: translateY(-0.15rem) scale(1.02);
         }
       }
     }

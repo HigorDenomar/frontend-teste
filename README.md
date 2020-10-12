@@ -20,7 +20,11 @@
 
 A Landing page foi construída utilizando [React.js](https://pt-br.reactjs.org/) e estilizada com [Styled Components](https://styled-components.com/docs/basics).
 
-</br><br/>
+</br>
+
+> Acesse a landing page: [FigmaLand - Frontend](https://figma-land-frontend.herokuapp.com/)
+
+<br/>
 
 ## 📷 Screenshots
 

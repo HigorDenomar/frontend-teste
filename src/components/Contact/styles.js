@@ -32,8 +32,17 @@ export const Container = styled.div`
   .networks {
     margin: 7.5rem 0 0 1rem;
 
-    img+img {
+    a+a {
       margin-left: 2.848rem;
+    }
+
+    img {
+      transition: 0.2s;
+    }
+
+    a:hover img {
+      filter: brightness(85%);
+      transform: translateY(-0.15rem) scale(1.03);
     }
   }
 `;
